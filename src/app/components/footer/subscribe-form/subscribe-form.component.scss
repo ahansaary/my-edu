@@ -1,0 +1,39 @@
+:host {
+  .subscribe {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 0 0 12px;
+  }
+
+  ion-input {
+    --color: #000;
+    --placeholder-color: #505050;
+
+    --padding-start: 12px;
+    --padding-end: 12px;
+
+    border: 1px solid #000;
+    line-height: 1;
+
+    &[type="submit"] {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .confirm {
+    margin: 12px 0 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 48px;
+
+    a {
+      color: #000;
+    }
+  }
+}

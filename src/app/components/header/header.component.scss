@@ -1,0 +1,26 @@
+:host {
+  ion-toolbar {
+    --background: var(--ion-color-primary-tint);
+  }
+
+  ion-title {
+    position: relative;
+
+    img {
+      width: 63px;
+      height: 27px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :host {
+    ion-toolbar {
+      --padding-start: 90px;
+      --padding-end: 90px;
+    }
+  }
+}
