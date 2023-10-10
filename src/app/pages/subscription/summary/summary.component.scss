@@ -1,0 +1,142 @@
+:host {
+  display: block;
+  background-color: #f1edfe;
+  padding: 32px 16px 24px;
+
+  @media (min-width: 768px) {
+    padding: 32px;
+    width: 400px;
+  }
+
+  .title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .invoice {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px 16px 40px;
+    margin: 24px 0;
+
+    .item-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+
+      .currency {
+        font-weight: 400;
+      }
+    }
+
+    .item-count {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #838383;
+    }
+  }
+
+  .subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+
+    .name {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    .currency,
+    .amount {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .currency {
+      font-weight: 400;
+    }
+
+    .amount {
+      font-weight: 700;
+    }
+
+    .free {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+      color: var(--text-subdued, #707070);
+    }
+  }
+
+  hr {
+    background-color: #d1c5fb;
+    margin: 21px 0;
+  }
+
+  .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    .name {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 150%;
+    }
+
+    .currency,
+    .amount {
+      font-size: 20px;
+      line-height: 24px;
+
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    .currency {
+      font-weight: 400;
+    }
+
+    .amount {
+      font-weight: 700;
+    }
+  }
+
+  @media (min-width: 768px) {
+    ion-button {
+      display: none;
+    }
+  }
+}
