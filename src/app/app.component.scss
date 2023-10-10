@@ -1,0 +1,64 @@
+:host ::ng-deep {
+  form ion-input ::ng-deep {
+    .label-text-wrapper {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    .native-input {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--gray-300, #d0d5dd);
+      background: var(--base-white, #fff);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    }
+
+    .input-highlight {
+      z-index: 2;
+    }
+  }
+
+  form ion-select {
+    &::part(label) {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    &::part(container) {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--gray-300, #d0d5dd);
+      background: var(--base-white, #fff);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      width: calc(100% - 30px);
+    }
+
+    &.select-label-placement-stacked::part(icon) {
+      right: 12px;
+      top: 12px;
+    }
+
+    &.select-label-placement-start::part(label) {
+      margin-inline: initial;
+    }
+
+    &.select-disabled {
+      opacity: 1;
+    }
+  }
+
+  form ion-datetime-button {
+    &::part(native) {
+      padding: 0;
+      width: 100%;
+      text-align: start;
+      background: transparent;
+    }
+  }
+}

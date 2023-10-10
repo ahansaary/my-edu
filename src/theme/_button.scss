@@ -1,0 +1,31 @@
+ion-button {
+  --background: var(--ion-color-primary-contrast);
+  --background-hover: var(--ion-color-primary-contrast);
+  --background-activated: var(--ion-color-primary-contrast);
+  --background-focused: var(--ion-color-primary-contrast);
+  --color: var(--ion-color-primary);
+  --border-radius: 12px;
+  --border-color: var(--ion-color-primary-shade);
+  --border-style: solid;
+  --border-width: 1px;
+  --box-shadow: 4px 4px 0px -1px var(--ion-color-primary-shade);
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+
+  text-transform: capitalize;
+  letter-spacing: normal;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  ion-button {
+    --border-radius: 24px;
+    --padding-top: 16px;
+    --padding-bottom: 16px;
+
+    font-size: 23px;
+    line-height: 38.4px;
+  }
+}
