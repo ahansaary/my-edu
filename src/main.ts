@@ -3,8 +3,8 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { RouteReuseStrategy, provideRouter } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
-import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
+import { routes } from './app/app.routes';
 import { environment } from './environments/environment';
 
 if (environment.production) {
@@ -14,7 +14,12 @@ if (environment.production) {
 bootstrapApplication(AppComponent, {
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    importProvidersFrom(IonicModule.forRoot({})),
+    importProvidersFrom(
+      IonicModule.forRoot({
+        rippleEffect: false,
+        mode: 'md',
+      })
+    ),
     provideRouter(routes),
   ],
 });
