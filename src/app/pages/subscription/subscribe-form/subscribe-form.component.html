@@ -1,0 +1,76 @@
+<h2 class="title">Subscribe</h2>
+
+<div class="description">
+  to our Monthly Surprise Box
+</div>
+
+<hr>
+
+<form>
+  <div class="section">
+    <h3 class="subheader">
+      Contact Information
+    </h3>
+
+    <ion-input label="Your Name" labelPlacement="stacked" placeholder="e.g Osama Alshathri">
+    </ion-input>
+
+    <ion-input label="Email" labelPlacement="stacked" placeholder="Osama@gmail.com">
+    </ion-input>
+  </div>
+
+  <div class="section">
+    <h3 class="subheader">
+      Child’s Information
+    </h3>
+
+    <ion-input label="Child’s Full Name" labelPlacement="stacked" placeholder="e.g Sarah Mohammad">
+    </ion-input>
+
+    <ion-datetime-button datetime="datetime" presentation="year">
+      <div slot="date-target">
+        <div class="date-picker-label">
+          Child’s Date of Birth
+        </div>
+        <div class="date-picker">
+          <ion-select placeholder="Date" disabled>
+          </ion-select>
+
+          <ion-select placeholder="Month" disabled>
+          </ion-select>
+
+          <ion-select placeholder="Year" disabled>
+          </ion-select>
+        </div>
+      </div>
+    </ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true">
+      <ng-template>
+        <ion-datetime id="datetime" presentation="date"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+
+    <ion-select label="Grade" labelPlacement="stacked" placeholder="e.g Grade 2">
+      <ion-select-option value="grade-1">Grade 1</ion-select-option>
+      <ion-select-option value="grade-2">Grade 2</ion-select-option>
+      <ion-select-option value="grade-3">Grade 3</ion-select-option>
+    </ion-select>
+  </div>
+
+  <p class="topics-title">
+    As a parent select any 3 topics
+  </p>
+
+  <div class="topics">
+    <div class="topic">Arabic</div>
+    <div class="topic">Islamic</div>
+    <div class="topic">English</div>
+    <div class="topic">History</div>
+    <div class="topic selected">Sports</div>
+  </div>
+
+  <ion-button expand="block">
+    Continue to payment
+  </ion-button>
+</form>
